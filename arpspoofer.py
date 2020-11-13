@@ -1,10 +1,10 @@
 #!usr/bin/env/python
 
+from __future__ import print_function
+from sys import stdout
 import scapy.all as scapy
 import optparse
 import time
-import sys
-import subprocess
 
 
 def get_arguments():
@@ -48,6 +48,7 @@ try:
         time.sleep(1)
         packet_sent_count = packet_sent_count + 2
         print("\r[+] Packets sent: " + str(packet_sent_count), end="")
+        stdout.flush()
 except KeyboardInterrupt:
     print("\n[+] CTRL + C detected..... Resetting ARP tables. Please wait!")
 
