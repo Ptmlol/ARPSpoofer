@@ -1,7 +1,8 @@
 # ARPSpoofer
 Powerful Linux Python Terminal program used to ARP spoof a target and it s interface MITM(Man in The Middle) attacks.
-Only with Linux at the moment..
-Windows coming soon..
+Linux and Windows compatible.
+
+Make sure you've installed the python interpreter and all the libraries.
 Python2 + compatible.
 
 Use: 
